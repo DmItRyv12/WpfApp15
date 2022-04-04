@@ -1,0 +1,112 @@
+﻿<Window x:Class="WpfApp15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer>
+
+            <FlowDocument>
+                <Paragraph>
+                    <Floater Width="250" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/Collage_of_Nine_Dogs.jpg"/>
+                            <BlockUIContainer.ToolTip>
+                                Изображение собак
+                            </BlockUIContainer.ToolTip>
+                        </BlockUIContainer>
+                    </Floater>
+                    <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0">
+                        <Hyperlink.ToolTip>
+                            https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0
+                        </Hyperlink.ToolTip>
+                        Собака
+                    </Hyperlink>
+                </Paragraph>
+                <Paragraph xml:space="preserve">    <Bold>Собака</Bold> - (лат. <Italic>Canis familiaris, или Canis lupus familiaris</Italic>) — домашнее животное, одно из наиболее популярных (наряду с кошкой) животных-компаньонов.
+                </Paragraph>
+                <Paragraph>
+                    <Span Background="#FFFFE0E5">Синонимы:</Span>
+                </Paragraph>
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>Canis lupus familiaris</Italic> (Linnaeus, 1758)
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>Canis lupus pallipes f. familiaris</Italic>
+                        </Paragraph>
+                    </ListItem>
+                    
+                </List>
+
+                <Paragraph xml:space="preserve">
+    <Bold>Домашняя собака</Bold> была описана как самостоятельный биологический вид <Italic>Canis familiaris</Italic> Линнеем в 1758 году; в настоящее время данное научное название признаётся многими авторитетными организациями, такими как "Американское общество маммалогов". Некоторые источники <Italic>(например, ITIS и MSW3)</Italic> придерживаются альтернативной классификации, в рамках которой собака считается подвидом волка <Italic>(Canis lupus familiaris)</Italic>. В русскоязычных письменных источниках слово «собака» в значении соответствующего животного встречается по крайней мере с 1475 года <Italic>(начиная с грамоты князя Андрея Васильевича Меньшого Кириллову монастырю)</Italic>.
+
+С зоологической точки зрения, <Bold>собака</Bold> — плацентарное млекопитающее отряда хищных семейства псовых.
+                </Paragraph>
+                <Paragraph xml:space="preserve">    Собаки известны своими способностями к обучению, любовью к игре, социальным поведением. Выведены специальные породы собак, предназначенные для различных целей: охоты, охраны, тяги гужевого транспорта и другого, а также декоративные породы (например, болонка, пудель).
+                </Paragraph>
+
+                <Paragraph>
+                    Нормальные физиологические показатели
+                </Paragraph>
+                <Table>
+                    <TableRowGroup >
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Температура тела
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    +37,5 - 39,0 °C
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Частота сердечных сокращений
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    70 -80 ударов в минуту
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Частота дыхания
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    10—20 вдохов в минуту
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+                </Table>
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
